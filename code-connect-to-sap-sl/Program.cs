@@ -11,12 +11,12 @@ namespace code_connect_to_sap_sl
         static void Main(string[] args)
         {
             // Request details
-            string url = "http://sap-server-ip:50001/b1s/v1/Login";
+            string url = "http://sap-server-ip50001/b1s/v1/Login";
             LoginRequest loginRequest = new LoginRequest()
             {
                 UserName = "sap-user",
                 Password = "sap-password",
-                CompanyDB = "company-database"
+                CompanyDB = "sap-company"
             };
 
             // Serialize request body to JSON
